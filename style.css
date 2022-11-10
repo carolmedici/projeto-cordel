@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@font-face {
+    font-family: "cordel";
+    src: url('fontes/cordel.otf') format('opentype');
+}
+
+:root{
+    --cor0: #bbd9f8;
+    --cor1: #416c7e;
+    --cor2: #8a939d80;
+    --cor3: #416c7e86;
+ 
+    --fonte-padrao: 'Indie Flower', Arial, Helvetica, sans-serif;
+    --fonte-cordel: 'cordel', cursive;
+    --fonte-basica: 'Arial, Helvetica, sans-serif'
+     }
+
+     *{ 
+        margin: 0px; 
+        padding: 0px; 
+        font-size: 1em;
+       }
+
+header{
+    background-color: var(--cor1);
+    color: white;
+    font: normal 2em var(--fonte-cordel);
+    text-align: center;
+   padding-top: 25px;
+    padding-bottom: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+    
+}
+
+header > h1{
+    padding-top: 50px;
+    font-size: 10vw;
+    font-variant: small-caps;
+
+}
+
+header > p {
+    padding-bottom: 50px;
+    text-shadow: none;
+    font: normal 0.8em var(--fonte-padrao);
+}
+
+p > a{
+    text-decoration: none;
+    color: white;
+    font: normal 0.8em var(--fonte-cordel);
+}
+
+a:hover{
+    color: var(--cor0);
+    text-decoration: overline underline;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+main{
+    min-height: 200vh;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 900px;
+    min-width: 300px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.237) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+
+section{
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 20px;
+    font-size: 3.5vw;
+    text-align: center;
+}
+
+#poema{
+    font: normal 2em var(--fonte-padrao);
+    
+}
+
+.p1{
+    background-color: white;
+    color: black;
+
+}
+
+.p2{
+    background-image: url(imagens/cordel.jpg);
+}
+
+.p3{
+    background-image: url(imagens/cordel2.jpg);
+}
+
+.imagem{
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--cor0);
+}
+
+
+.imagem > p {
+    background-color: var(--cor2);
+    color: white;
+    display: inline-block;
+    padding: 5px;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    font-family: var(--fonte-basica);
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    background-color: var(--cor1);
+    color: white;
+    padding: 5px;
+}
